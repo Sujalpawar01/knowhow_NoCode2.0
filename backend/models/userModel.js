@@ -6,7 +6,7 @@ const userSchema = new mongoose.Schema({
   password: { type: String, required: true },
   isEsteemed: { type: Boolean, default: false },
   qrCode: { type: String },
-  documents: { type: Array, default: [] },
+  documents: [{ type: String }], // Updated schema for documents
 });
 
 export default mongoose.model('User', userSchema);

@@ -9,6 +9,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors());
+app.use('/uploads', express.static('uploads')); // Serve uploaded files
 
 // Connect to the database
 connectDB();
