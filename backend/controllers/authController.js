@@ -1,7 +1,7 @@
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import QRCode from 'qrcode';
-import User from './routes/userModel.js';
+import User from '../models/userModel.js';
 
 // Register
 export const register = async (req, res) => {
